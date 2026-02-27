@@ -32,6 +32,13 @@ It was developed as part of the **Future Interns — Full Stack Web Development 
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Add your deployed link here**  
+Example: https://ummeruhi.github.io/FUTURE_FS_03/
+
+---
+
 ## ✨ Features
 
 ### 🧭 Core Sections
