@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ralph’s Coffee</title>
+
+  <meta name="description" content="Ralph’s Coffee — premium coffee, fresh bakes, and an elegant café experience.">
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container">
+
+      <!-- Brand -->
+      <a href="#top" class="brand" aria-label="Home">
+        <img src="assets/logo.png" alt="Ralph’s Coffee Logo" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-title">Ralph’s Coffee</span>
+          <span class="brand-tagline">crafted coffee • elegant moments</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="btn btn-small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="pill">Heritage • Green • Cream</p>
+        <h1>Classic luxury, served warm.</h1>
+        <p class="sub">
+          Premium coffee, fresh bakes, and a refined ambience—crafted for memorable moments.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#menu">Explore Menu</a>
+          <a class="btn btn-outline" href="#contact">Visit Us</a>
+        </div>
+
+        <div class="meta">
+          <span>⏰ 9AM–10PM</span>
+          <span>📍 City Center</span>
+          <span>🟢 Signature Green</span>
+        </div>
+
+        <div class="meta" style="margin-top:10px">
+          <span>⭐ 4.8 rating</span>
+          <span>🛜 Free Wi-Fi</span>
+          <span>💳 UPI / Cards</span>
+        </div>
+      </div>
+
+      <div class="hero-media card">
+        <img
+          src="assets/pic4.jpg"
+          alt="Latte art in a cup"
+          loading="lazy"
+        />
+        <div class="hero-media-caption">
+          <div>
+            <strong>Signature Latte</strong>
+            <span>balanced • smooth • premium</span>
+          </div>
+          <a class="btn btn-small" id="whatsAppOrderTop" href="#" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          Ralph’s Coffee is a premium café crafted for those who appreciate exceptional coffee and refined ambience.
+          We combine high-quality beans, fresh bakes, and elegant interiors to deliver an elevated café experience.
+        </p>
+        <ul class="ticks">
+          <li>Signature specialty coffee</li>
+          <li>Fresh artisanal bakery</li>
+          <li>Luxury yet comfortable ambience</li>
+          <li>Quality-focused service</li>
+        </ul>
+      </div>
+
+      <div class="card about-media">
+        <img
+          src="https://t4.ftcdn.net/jpg/07/11/53/93/360_F_711539349_VukYaA4hEk4HZ28zyn3gqQkPasFiSZqW.jpg"
+          alt="Cafe interior with plants"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          <span class="star">4.8★</span>
+          <span class="muted">luxury experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Menu</h2>
+        <p>Filter items by category.</p>
+      </div>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="coffee">Coffee</button>
+        <button class="chip" data-filter="tea">Tea</button>
+        <button class="chip" data-filter="bakery">Bakery</button>
+      </div>
+
+      <div class="grid" id="menuGrid">
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-top"><h3>Signature Latte</h3><span class="price">₹220</span></div>
+          <p>Velvety milk, rich espresso, smooth finish.</p>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-top"><h3>Espresso</h3><span class="price">₹160</span></div>
+          <p>Bold shot with classic crema.</p>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="menu-top"><h3>English Breakfast Tea</h3><span class="price">₹140</span></div>
+          <p>Warm, aromatic, heritage blend.</p>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="menu-top"><h3>Mint Iced Tea</h3><span class="price">₹170</span></div>
+          <p>Refreshing, light, and crisp.</p>
+        </div>
+
+        <div class="menu-item" data-category="bakery">
+          <div class="menu-top"><h3>Butter Croissant</h3><span class="price">₹190</span></div>
+          <p>Flaky layers, buttery aroma.</p>
+        </div>
+
+        <div class="menu-item" data-category="bakery">
+          <div class="menu-top"><h3>Chocolate Tart</h3><span class="price">₹240</span></div>
+          <p>Rich cocoa with delicate crust.</p>
+        </div>
+      </div>
+
+      <div class="menu-cta">
+        <a class="btn" id="whatsAppOrderMenu" href="#" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        
+      </div>
+
+      <div class="gallery">
+        <img src="assets/Cafe Green Design.jpg" alt="Cafe interior" loading="lazy">
+        <img src="assets/pic3.jpg" alt="Pastry display case" loading="lazy">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXcA5tbzFT4axl4oM5Ri_KUT10Fztiqgawg&s" alt="Coffee beans close-up" loading="lazy">
+        <img src="assets/pic.jpg" alt="Latte art cup" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2>Reviews</h2>
+        
+      </div>
+
+      <div class="review-card">
+        <p class="review-text" id="reviewText">“Elegant interior and the latte was perfectly balanced.”</p>
+        <p class="review-author" id="reviewAuthor">— Customer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container two-col">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><b>Address:</b> Your City, Main Street</p>
+        <p><b>Hours:</b> 9:00 AM – 10:00 PM</p>
+        <p><b>Phone:</b> +91 XXXXXXXXXX</p>
+
+        <div class="contact-actions">
+          <a class="btn" id="whatsAppOrderContact" href="#" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=coffee+shop">
+            Open in Maps
+          </a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=coffee%20shop&output=embed"
+            width="100%" height="230"
+            style="border:0; border-radius:16px;"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+
+          <label>Phone</label>
+          <input type="tel" id="phone" placeholder="10-digit number" required />
+
+          <label>Message</label>
+          <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+          <button class="btn" type="submit">Submit</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (Gallery Zoom) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <img id="lightboxImg" alt="Preview">
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp-float" id="whatsAppFloat" href="#" aria-label="WhatsApp" rel="noopener">💬</a>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ralph’s Coffee. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
